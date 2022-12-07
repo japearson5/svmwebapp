@@ -53,7 +53,7 @@ scaler.fit(X)
 
 
 #loading the model
-loaded_model = pickle.load(open('C:/Users/JPear/cs551/streamlit/linsvm.sav', 'rb'))
+loaded_model = pickle.load(open('linsvm.sav', 'rb'))
 
 #creating a function for the prediction
 def housing_price_prediction(input_data):
