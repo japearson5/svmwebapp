@@ -88,11 +88,11 @@ def main():
     longitude = st.slider('Choose the longitude:', -124.35, -114.31)#, value=None, step=None, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False, label_visibility="visible")
     latitude = st.slider('Choose the latitude:', 32.54, 41.95)
     housing_median_age = st.slider('Housing median age on the block:', 1, 52)
-    rooms_per_house = st.slider('Average number of rooms per house on the block:', 0.5, 142.0)
-    bedrooms_per_house = st.slider('Average number of bedrooms per house on the block:', 0.4, 35.0)
-    population = st.slider('Population of the block:', 3, 4820)
-    households = st.slider('Number of houses on the block:', 2, 1645)
-    median_income = st.slider('Median income of homeowners on the block (in tens of thousands of dollars per year):', 0.48, 9.6)
+    rooms_per_house = st.number_input('Average number of rooms per house on the block:', 0.5, 142.0)
+    bedrooms_per_house = st.number_input('Average number of bedrooms per house on the block:', 0.4, 35.0)
+    population = st.number_input('Population of the block:', 3, 4820)
+    households = st.number_input('Number of houses on the block:', 2, 1645)
+    median_income = st.number_input('Median income of homeowners on the block (in tens of thousands of dollars per year):', 0.48, 9.6)
     ocean_proximity = st.slider('Proximity to the ocean (0 = On an Island, 1 = Near the Ocean, 2 = Near the Bay, 3 = Less than an hour drive, 4 = Inland):', 0, 4)
     
     result = ''
