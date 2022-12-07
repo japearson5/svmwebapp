@@ -14,7 +14,7 @@ from scipy.stats import zscore
 from sklearn.preprocessing import StandardScaler
 
 #importing the housing data
-housingdata = pd.read_csv(r"C:/Users/JPear/cs551/finalproject/housing-data.csv")
+housingdata = pd.read_csv("housing-data.csv")
 df = pd.DataFrame(housingdata)
 df['total_bedrooms']=df.groupby('ocean_proximity')['total_bedrooms'].apply(lambda x: x.fillna(x.median()))
 
