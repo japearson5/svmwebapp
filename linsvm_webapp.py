@@ -93,7 +93,7 @@ def main():
     population = st.number_input('Population of the block:', 3, 4820)
     households = st.number_input('Number of houses on the block:', 2, 1645)
     median_income = st.number_input('Median income of homeowners on the block (in tens of thousands of dollars per year):', 0.48, 9.6)
-    ocean_proximity = st.slider('Proximity to the ocean (0 = On an Island, 1 = Near the Ocean, 2 = Near the Bay, 3 = Less than an hour drive, 4 = Inland):', 0, 4)
+    ocean_proximity = st.slider('Proximity to the ocean (0 = On an Island, 1 = Near the Ocean, 2 = Near the Bay, 3 = Less Than an Hour From the Ocean, 4 = Inland):', 0, 4)
     
     result = ''
     
